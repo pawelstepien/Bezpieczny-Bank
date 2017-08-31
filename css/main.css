@@ -28,85 +28,73 @@ h1, h2, h3 {
     float: left;
     min-height: 1px; }
   .grid-container .row .col-1 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-1 {
         width: 8.3333333333%;
         margin: 0; } }
   .grid-container .row .col-2 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-2 {
         width: 16.6666666667%;
         margin: 0; } }
   .grid-container .row .col-3 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-3 {
         width: 25%;
         margin: 0; } }
   .grid-container .row .col-4 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-4 {
         width: 33.3333333333%;
         margin: 0; } }
   .grid-container .row .col-5 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-5 {
         width: 41.6666666667%;
         margin: 0; } }
   .grid-container .row .col-6 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-6 {
         width: 50%;
         margin: 0; } }
   .grid-container .row .col-7 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-7 {
         width: 58.3333333333%;
         margin: 0; } }
   .grid-container .row .col-8 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-8 {
         width: 66.6666666667%;
         margin: 0; } }
   .grid-container .row .col-9 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-9 {
         width: 75%;
         margin: 0; } }
   .grid-container .row .col-10 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-10 {
         width: 83.3333333333%;
         margin: 0; } }
   .grid-container .row .col-11 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-11 {
         width: 91.6666666667%;
         margin: 0; } }
   .grid-container .row .col-12 {
-    width: 100%;
-    margin: 0 0 20px; }
+    width: 100%; }
     @media screen and (min-width: 640px) {
       .grid-container .row .col-12 {
         width: 100%;
@@ -228,6 +216,7 @@ body {
 
 .pattern-top {
   background-image: url("../img/main-menu/pattern.png");
+  background-position-x: -1px;
   background-repeat: repeat;
   height: 8px; }
 
@@ -280,10 +269,10 @@ body {
   height: 365px;
   background-color: #FFFFFF;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-family: "Raleway"; }
 
 .loan__mortgage {
-  font-family: "Raleway";
   padding: 10px 20px;
   display: flex;
   flex-direction: column; }
@@ -299,6 +288,128 @@ body {
     line-height: 64px;
     margin-top: auto;
     text-align: right; }
+
+.loan__cash {
+  display: flex;
+  justify-content: center;
+  height: 214px; }
+
+.loan__cash--big-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.loan__cash--header {
+  font-size: 28px;
+  font-family: inherit;
+  font-weight: 400;
+  padding-bottom: 23px; }
+
+.loan__cash--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.loan__cash--upper, .loan__cash--bottom {
+  font-size: 12px;
+  width: 335px; }
+
+.loan__cash--amount, .loan__cash--duration {
+  margin-left: 8px; }
+
+.loan__cash--blue-line {
+  height: 1px;
+  background-color: #50c5da; }
+
+.loan__cash--summary {
+  display: flex;
+  justify-content: space-between; }
+  .loan__cash--summary a {
+    font-size: 18px;
+    color: #50c5da; }
+
+.loan__cash--summary-wrapper {
+  display: inline-block; }
+
+.loan__cash--installment-caption, .loan__cash--installment {
+  font-size: 18px; }
+
+.loan__cash--installment {
+  font-family: "Raleway-SemiBold";
+  color: #50c5da; }
+
+input[type=range] {
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  width: 100%;
+  /* Specific width is required for Firefox. */
+  background: transparent;
+  /* Otherwise white in Chrome */ }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; }
+
+input[type=range]:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+.loan__cash--range {
+  width: 335px;
+  height: 20px;
+  margin: 9px 0; }
+
+.loan__cash--range::-webkit-slider-thumb {
+  border: none;
+  width: 62px;
+  height: 38px;
+  border-radius: 8px;
+  margin-top: -9px;
+  background-color: #50c5da;
+  background-image: ulr("../img/loan/thumb-decoration.png");
+  background-position: center; }
+
+.loan__cash--range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 100%;
+  background-color: #e7e7e7; }
+
+.loan__cash--range::-moz-range-thumb {
+  border: none;
+  width: 62px;
+  height: 38px;
+  border-radius: 8px;
+  margin-top: -9px;
+  background-color: #50c5da;
+  background-image: ulr("../img/loan/thumb-decoration.png");
+  background-position: center; }
+
+.loan__cash--range::-moz-range-track {
+  width: 100%;
+  height: 100%;
+  background-color: #e7e7e7; }
+
+.loan__cash--range::-ms-thumb {
+  border: none;
+  width: 62px;
+  height: 38px;
+  border-radius: 8px;
+  margin-top: -9px;
+  background-color: #50c5da;
+  background-image: ulr("../img/loan/thumb-decoration.png");
+  background-position: center; }
+
+.loan__cash--range::-ms-track {
+  width: 100%;
+  height: 100%;
+  background-color: #e7e7e7; }
 
 .quick-menu {
   height: 375px;
@@ -316,9 +427,11 @@ body {
   font-family: "Raleway"; }
 
 .quick-menu__loan--img {
+  display: inline-block;
   font-family: "Raleway-ExtraBold";
   font-size: 96px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  line-height: 72px; }
 
 .quick-menu__header {
   margin-top: 32px;
@@ -362,6 +475,7 @@ body {
 
 .footer {
   padding-top: 30px;
+  height: 90px;
   font-family: "Raleway";
   font-size: 12px;
   color: #A0A0A0; }
